@@ -70,9 +70,9 @@ function App() {
             </thead>
 
             <tbody>
-                {todo.map((todos, count) => (
-                  <List todo={todos} />
-                ))}
+              {todo.map((todos, count) => (
+                <List count={count} todo={todos} />
+              ))}
             </tbody>
           </table>
         </div>

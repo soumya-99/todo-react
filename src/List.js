@@ -7,8 +7,6 @@ function List(props) {
   const [input, setInput] = useState("");
   const [show, setShow] = useState(false);
 
-  var count = 1;
-
   //?...........Edit Stuff.............//
 
   const handleEdit = () => {
@@ -57,7 +55,7 @@ function List(props) {
         </Modal.Footer>
       </Modal>
       <tr>
-        <th>{count++}</th>
+        <th>{props.count}</th>
         <td>{props.todo.todo}</td>
         <td>
           <button className="btn btn-warning" onClick={() => setShow(true)}>
