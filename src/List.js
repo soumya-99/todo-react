@@ -71,7 +71,7 @@ function List(props) {
           </button>
         </td>
       </tr>
-      </>
+    </>
   );
 }
 
